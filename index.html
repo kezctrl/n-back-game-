@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>N-Back Test Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <!-- Splash Screen -->
+        <div id="splash-screen">
+            <h1>N-Back Test</h1>
+            <p>Welcome to the N-Back Challenge!</p>
+            <p>Press any key to continue.</p>
+        </div>
+        
+        <!-- Instructions Screen -->
+        <div id="instructions-screen" style="display: none;">
+            <h2>Instructions</h2>
+            <p>You'll see a sequence of letters.</p>
+            <p>Your task is to decide if the current letter matches the letter from N steps back.</p>
+            <p>Press 'T' for True or 'F' for False. Be quick, you have 1 second per letter!</p>
+            <p>Score points for correct answers and earn bonus points for streaks!</p>
+            <p>Press any key to start the game.</p>
+        </div>
+
+        <!-- Game Screen -->
+        <div id="game-screen" style="display: none;">
+            <h1 id="letter-display"></h1>
+            <p id="score-display">Score: 0</p>
+            <p id="progress-display">Progress: 0%</p>
+            <p>Press 'T' for True or 'F' for False.</p>
+            <p id="feedback" style="font-size: 24px;"></p>
+        </div>
+
+        <!-- Result Screen -->
+        <div id="result-screen" style="display: none;">
+            <h2>Game Over!</h2>
+            <p id="final-score"></p>
+            <p id="accuracy-display"></p>
+            <button id="play-again-btn">Play Again</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

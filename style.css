@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1e90ff;  /* Dodger blue */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#game-container {
+    text-align: center;
+    max-width: 600px;
+}
+
+h1, h2 {
+    margin-bottom: 20px;
+}
+
+#letter-display {
+    font-size: 100px;
+    margin: 20px 0;
+    transition: color 0.3s;
+}
+
+#score-display, #progress-display, #feedback {
+    font-size: 24px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #28a745;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+#feedback {
+    color: #ffd700;  /* Gold for correct, red for wrong */
+}
